@@ -1,5 +1,7 @@
 package com.rsu.latihanrsu.dto.response;
 
+import java.util.List;
+import com.rsu.latihanrsu.entity.MedicineImage;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,4 +20,5 @@ public class MedicineResponse {
   private String name;
   private Long price;
   private String info;
+  List<MedicineImage> images;
 }

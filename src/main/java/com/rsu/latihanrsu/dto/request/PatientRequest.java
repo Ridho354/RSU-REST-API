@@ -1,9 +1,6 @@
 package com.rsu.latihanrsu.dto.request;
 
-import java.util.Optional;
-
 import com.rsu.latihanrsu.constant.PatientStatus;
-import com.rsu.latihanrsu.entity.Bpjs;
 import com.rsu.latihanrsu.entity.UserAccount;
 
 import lombok.AllArgsConstructor;

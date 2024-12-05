@@ -1,7 +1,6 @@
 package com.rsu.latihanrsu.dto.response;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 import com.rsu.latihanrsu.constant.OutpatientStatus;
 import com.rsu.latihanrsu.constant.PatientStatus;

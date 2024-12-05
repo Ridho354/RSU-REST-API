@@ -17,7 +17,6 @@ import com.rsu.latihanrsu.dto.request.MidtransTransactionDetailRequest;
 import com.rsu.latihanrsu.dto.request.UpdateOrderStatusRequest;
 import com.rsu.latihanrsu.dto.response.MidtransSnapResponse;
 import com.rsu.latihanrsu.dto.response.PaymentResponse;
-import com.rsu.latihanrsu.entity.Medicine;
 import com.rsu.latihanrsu.entity.MedicineTransaction;
 import com.rsu.latihanrsu.entity.Payment;
 import com.rsu.latihanrsu.repository.PaymentRepository;

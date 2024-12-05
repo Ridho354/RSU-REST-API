@@ -41,6 +41,7 @@ public class SecurityConfig {
                                 .requestMatchers("rsu/api/auth/register").permitAll()
                                 .requestMatchers("rsu/api/auth/register-super-admin").permitAll()
                                 .requestMatchers("rsu/api/medicine-transaction/payments/notifications").permitAll()
+                                .requestMatchers("rsu/api/images").permitAll()
                                 .anyRequest().authenticated()
                 )
                 .authenticationProvider(authenticationProvider)

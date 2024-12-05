@@ -23,9 +23,9 @@ public class JwtServiceImpl implements JwtService {
     private final Algorithm algorithm;
 
     public JwtServiceImpl(
-            @Value("${wmb_api.jwt.secret_key}") String jwtSecret,
-            @Value("${wmb_api.jwt.expirationInSecond}") Long jwtExpiration,
-            @Value("${wmb_api.jwt.issuer}") String issuer) {
+            @Value("${rsu_api.jwt.secret_key}") String jwtSecret,
+            @Value("${rsu_api.jwt.expirationInSecond}") Long jwtExpiration,
+            @Value("${rsu_api.jwt.issuer}") String issuer) {
         JWT_SECRET = jwtSecret;
         JWT_EXPIRATION = jwtExpiration;
         ISSUER = issuer;

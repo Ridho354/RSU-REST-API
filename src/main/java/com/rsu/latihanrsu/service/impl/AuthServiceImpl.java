@@ -49,7 +49,7 @@ public class AuthServiceImpl implements AuthService {
         PatientRequest patientRequest = PatientRequest.builder()
                 .patient_name(request.getPatient_name())
                 .patient_status(request.getPatient_status())
-                .number_bpjs(bpjsRepository.findById(request.getNumber_bpjs()).orElse(null))
+                .number_bpjs(request.getNumber_bpjs())
                 .patient_address(request.getPatient_address())
                 .birth_date(request.getBirth_date())
                 .gender(request.getGender())

@@ -1,15 +1,11 @@
 package com.rsu.latihanrsu.service;
 
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.NoSuchElementException;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cglib.core.Local;
 import org.springframework.stereotype.Service;
 
 import com.rsu.latihanrsu.constant.OutpatientStatus;
@@ -128,7 +124,7 @@ public class OutpatientService {
         response.setPatientId(outpatient.getPatient_id().getId());
         response.setPatientName(outpatient.getPatient_id().getPatient_name());
         response.setPatientStatus(outpatient.getPatient_id().getPatient_status());
-        response.setNumberBpjs(outpatient.getPatient_id().getNumber_bpjs().getNumber_bpjs() != null ? outpatient.getPatient_id().getNumber_bpjs().getNumber_bpjs() : null);
+        response.setNumberBpjs(outpatient.getPatient_id().getNumber_bpjs());
         response.setDateControl(outpatient.getDateControl());
         response.setIdControlNumber(outpatient.getIdControlNumber() != null ? outpatient.getIdControlNumber().getIdControlNumber() : null);
         response.setPolyclinicName(outpatient.getIdControlNumber() != null ? outpatient.getIdControlNumber().getPolyclinic_id().getPolyclinic_name(): null);

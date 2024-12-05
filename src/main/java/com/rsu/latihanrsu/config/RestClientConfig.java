@@ -27,7 +27,7 @@ public class RestClientConfig {
     /*
      
      */
-    @Value("${wmb_api.json_placeholder_url}")
+    @Value("${rsu_api.json_placeholder_url}")
     private String jsonPlaceholderBaseUrl;
 
     @Value("${midtrans.api.url}")
