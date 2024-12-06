@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/v1/files")
+@RequestMapping("/rsu/api/files")
 public class FileController {
     private final StorageService storageService;
 
@@ -27,6 +27,8 @@ public class FileController {
                 .ok()
                 .header(HttpHeaders.CONTENT_DISPOSITION, contentDisposition)
                 .contentType(MediaType.APPLICATION_OCTET_STREAM)
-                .body(resource); // response body
+                .body(resource); 
     }
+
+    
 }

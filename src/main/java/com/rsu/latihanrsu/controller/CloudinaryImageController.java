@@ -37,14 +37,12 @@ public class CloudinaryImageController {
     // ini adalah solusi ketika path variable kemungkinan ada special characters seperti slash
     // alternative gunakan query param sebagai workaround
     @DeleteMapping("/**")
-//    public ResponseEntity<?> deleteImage(@PathVariable("publicId") String publicId) {
     public ResponseEntity<?> deleteImage(HttpServletRequest request) {
         String requestURL = request.getRequestURL().toString();
 
-//        String publicId = requestURL.split("/api/v1/images/")[1];
-        String publicId = requestURL.split(Constant.IMAGES_TEST_API)[1]; // pentingnya Constant
+        String publicId = requestURL.split(Constant.IMAGES_TEST_API)[1];
 
-        storageService.deleteFile(publicId);
+        storageService.deleteFile(publicId.substring(1));
         return ResponseUtil.buildResponse(HttpStatus.OK, "Successfuly deleted image", null);
     }
 }
